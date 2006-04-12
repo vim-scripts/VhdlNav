@@ -1,0 +1,18 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1515
+
+VHDL is very repetitive in nature.  Often, when looking at only a small section of code that's visibile in the window, it's difficult to glean exactly where you are.  
+
+For example, if you have four instances of a component, each 100 lines long.  It can be difficult to know which instance your in without navigating away from your current spot, which I find annoying.
+
+To address this, I wrote a script which shows a window displaying snippits of code representing what I consider the major entry points of the source.  The script then determines where you are relative to the snippits, and highlights the snippit above your current location.
+
+Snippits currently include:
+entity declaration
+component declaration
+first line of an instatiation 
+first line of a process
+horizontal lines created from comments (displays the next line as the snippit)
+
+As an added bonus, you can also double-click (or hit enter) in the Vhdl_Nav window to jump to the section of code represented by the snippit.
+
+This isn't the first script I've ever written, but it's the first I've attempted to write for others to use.  So, while it's been working great for me, you've been warned.  I welcome any feedback and suggestions.
